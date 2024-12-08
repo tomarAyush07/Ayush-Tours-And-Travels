@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Tours and Travels Blog</title>
+    <link rel="icon" type="image/x-icon" href="ayushtravels.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: wheat;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-image: url('river.jpg');
+            background-size: cover;
+        }
+           header {
+            text-align: center;
+            padding: 20px;
+            font-size: xx-large;
+            color: white;
+            border-radius: 8px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 3;
+            background: rgba(17, 3, 3, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
+        }
+        .sidebar {
+            flex: 1;
+            background:rgba(17, 3, 3, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1{
+            color: wheat;
+        }
+        a{
+            text-decoration: none;
+            color: #FF4500;
+        }
+
+        .post {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        .post h2 {
+            margin: 10px 0;
+        }
+        .post p {
+            margin: 10px 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #FF6F61;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #4f1b17;
+        }
+        .categories, .popular-posts {
+            margin: 20px 0;
+            padding: 10px;
+            background: rgba(17, 3, 3, 0.2);
+            border-radius: 5px;
+        }
+        .categories a, .popular-posts a {
+            display: block;
+            margin: 5px 0;
+            color: #e67e22;
+            text-decoration: none;
+        }
+        .author-bio {
+            background: rgba(17, 3, 3, 0.2);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .author-bio img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 15px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(49% - 10px);
+            height: 190px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .testimonials {
+            background: rgba(17, 3, 3, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .testimonial {
+            margin-bottom: 15px;
+        }
+        .testimonial p {
+            font-style: italic;
+        }
+        .travel-tips {
+            background: rgba(17, 3, 3, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+    /* Adjustments for small screens (phones) if needed */
+    body {
+        padding: 10px;
+    }
+    .login-container {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjustments for tablets if needed */
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ayush Tours and Travels Blog</h1>
+        <p>Your guide to unforgettable journeys</p>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Latest Posts</h2>
+
+            <div class="post">
+                <h2><a href="#">Exploring the Enchanting Beaches of Goa</a></h2>
+                <p>Discover the pristine beaches, vibrant nightlife, and delicious cuisine of Goa. Whether you're looking to relax or party, Goa has something for everyone.</p>
+                <p><a href="#" class="btn">Read More</a></p>
+            </div>
+
+            <div class="post">
+                <h2><a href="#">Top 10 Tips for Traveling on a Budget</a></h2>
+                <p>Traveling doesn't have to break the bank. Here are our top ten tips to save money while exploring new destinations.</p>
+                <p><a href="#" class="btn">Read More</a></p>
+            </div>
+
+            <div class="post">
+                <h2><a href="#">Cultural Experiences: Festivals You Must Attend</a></h2>
+                <p>Immerse yourself in the local culture by attending these vibrant festivals around the world. From Diwali in India to Carnival in Brazil, celebrate diversity!</p>
+                <p><a href="#" class="btn">Read More</a></p>
+            </div>
+
+            <div class="post">
+                <h2><a href="#">Sustainable Travel: How to Make a Difference</a></h2>
+                <p>Learn how you can travel responsibly and support local communities while minimizing your environmental impact.</p>
+                <p><a href="#" class="btn">Read More</a></p>
+            </div>
+
+            <div class="post">
+                <h2><a href="#">Hidden Gems: Offbeat Destinations to Explore</a></h2>
+                <p>Discover lesser-known travel destinations that offer unique experiences away from the tourist crowds.</p>
+                <p><a href="#" class="btn">Read More</a></p>
+            </div>
+
+            <div class="post">
+                <h2><a href="#">Adventures in the Himalayas: Trekking Guide</a></h2>
+                <p>Experience the breathtaking landscapes of the Himalayas with our comprehensive trekking guide. Perfect for both beginners and seasoned trekkers.</p>
+                <p><a href="#" class="btn">Read More</a></p>
+            </div>
+
+            <div class="post">
+                <h2><a href="#">The Culinary Delights of Street Food</a></h2>
+                <p>Explore the diverse flavors of street food around the world. From spicy tacos in Mexico to sweet crepes in France, food is an adventure!</p>
+                <p><a href="#" class="btn">Read More</a></p>
+            </div>
+
+            <h2>Travel Tips</h2>
+            <div class="travel-tips">
+                <h3>Essential Tips for First-Time Travelers</h3>
+                <ul>
+                    <li>Always have a digital and physical copy of important documents.</li>
+                    <li>Learn basic phrases in the local language.</li>
+                    <li>Keep an emergency kit with essentials like medications and first-aid supplies.</li>
+                    <li>Stay connected with family and friends through regular updates.</li>
+                    <li>Respect local customs and traditions to enrich your travel experience.</li>
+                </ul>
+            </div>
+
+            <h2>Categories</h2>
+            <div class="categories">
+                <a href="#">Adventure</a>
+                <a href="#">Cultural Insights</a>
+                <a href="#">Travel Tips</a>
+                <a href="#">Food & Travel</a>
+                <a href="#">Destination Guides</a>
+            </div>
+
+            <h2>Author Bio</h2>
+            <div class="author-bio">
+                <img src="k.jpg" alt="Author Photo">
+                <h3>Ayush Singh Tomar</h3>
+                <p>Travel Enthusiast & Blogger</p>
+                <p>Ayush is passionate about exploring new places and sharing his travel experiences to inspire others. He believes in sustainable travel and often writes about unique cultures and adventures.</p>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h2>Popular Posts</h2>
+            <div class="popular-posts">
+                <a href="#">10 Must-Visit Places in India</a>
+                <a href="#">How to Pack Light for Any Trip</a>
+                <a href="#">The Best Street Food Around the World</a>
+                <a href="#">Adventure Activities You Can't Miss</a>
+            </div>
+
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="nagaland.jpg" alt="Beach">
+                <img src="7sis.jpg" alt="Mountains">
+                <img src="gujrat1.jpg" alt="City">
+                <img src="hawamahal.png" alt="Forest">
+                <img src="taj.jpeg" alt="Food">
+                <img src="balaji.jpeg" alt="Culture">
+                <img src="banglore.jpg" alt="">
+                <img src="bhtargao.jpeg" alt="">
+                <img src="bengal.jpeg" alt="">
+                <img src="ramesh.webp" alt="">
+                <img src="rameshwaram.jpeg" alt="">
+                <img src="rammandir.jpeg" alt="">
+                <img src="jk.jpeg" alt="">
+                <img src="sikkim.jpeg" alt="">
+                <img src="somnath.jpeg" alt="">
+                <img src="kashi.jpeg" alt="">
+                <img src="kedarnath.jpeg" alt="">
+                <img src="arunachal.jpeg" alt="">
+                <img src="mumbai.jpg" alt="">
+                <img src="k.jpg" alt="">
+            </div>
+        </aside>
+    </div>
+
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <p>"Ayush Tours made our vacation unforgettable! The itinerary was perfect, and the guides were knowledgeable and friendly." - Ravi S.</p>
+        </div>
+        <div class="testimonial">
+            <p>"We loved every moment of our trip! The attention to detail was remarkable, and we felt truly taken care of." - Priya M.</p>
+        </div>
+        <div class="testimonial">
+            <p>"An excellent travel agency with personalized service. I can't recommend them enough!" - Anjali R.</p>
+        </div>
+    </div>
+
+    <div class="footer" style="background-color: #333 ;color: wheat;">
+        <p>&copy; 2024 Ayush Tours and Travels. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

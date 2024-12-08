@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Ayush Tours and Travels</title>
+    <link rel="icon" type="image/x-icon" href="ayushtravels.jpg">
+    <style>
+            body { font-family: 'Arial', sans-serif; 
+            background-image: url('raj.jpg');
+            background-size:contain;
+         }
+         header {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            color:wheat;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .destination {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            margin: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s;
+            width: calc(33% - 30px);
+            position: relative;
+        }
+
+        .destination:hover {
+            transform: scale(1.05);
+        }
+
+        .destination img {
+            width: 100%;
+            height: auto;
+        }
+
+        .destination h3 {
+            margin: 10px 0;
+            color: #ffc107;
+            text-align: center;
+        }
+
+        .destination p {
+            padding: 0 15px 15px;
+            text-align: justify;
+            color: wheat;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .destination {
+                width: calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .destination {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+    /* Adjustments for small screens (phones) if needed */
+    body {
+        padding: 10px;
+    }
+    .login-container {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjustments for tablets if needed */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Our Destinations</h1>
+    </header>
+    
+    <div class="container">
+        <div class="destination">
+            <img src="himalaya.webp" alt="Himalayas">
+            <h3>Himalayas</h3>
+            <p>Discover the breathtaking beauty of the Himalayas, where majestic peaks touch the sky. From the serene lakes to the thrilling trekking trails, this region offers adventure and tranquility. Experience the rich culture and the warm hospitality of the mountain communities.</p>
+        </div>
+        
+        <div class="destination">
+            <img src="goa.jpg" alt="Goa">
+            <h3>Goa</h3>
+            <p>Experience the vibrant culture and stunning beaches of Goa. Known for its lively nightlife and delicious seafood, Goa is a perfect destination for relaxation and adventure. Explore historical forts, unwind on sandy beaches, and enjoy water sports in this coastal paradise.</p>
+        </div>
+        
+        <div class="destination">
+            <img src="kerala.jpeg" alt="Kerala">
+            <h3>Kerala</h3>
+            <p>Explore the lush backwaters of Kerala, often referred to as "God's Own Country." Experience houseboat cruises on serene waters, visit spice plantations, and enjoy the unique cuisine. Kerala's tranquil landscapes and cultural richness make it a perfect retreat for nature lovers.</p>
+        </div>
+
+        <div class="destination">
+            <img src="hawamahal.png" alt="Rajasthan">
+            <h3>Rajasthan</h3>
+            <p>Immerse yourself in the rich heritage of Rajasthan, home to majestic forts, palaces, and vibrant markets. Visit cities like Jaipur, Udaipur, and Jodhpur to explore stunning architecture and experience traditional Rajasthani culture. Don't miss the chance to taste the local cuisine!</p>
+        </div>
+
+        <div class="destination">
+            <img src="andman.jpg" alt="Andaman Islands">
+            <h3>Andaman Islands</h3>
+            <p>Visit the pristine beaches of the Andaman Islands, known for their crystal-clear waters and vibrant marine life. Ideal for snorkeling, diving, and relaxation, these islands offer a perfect escape from the hustle and bustle of city life. Experience the beauty of untouched nature!</p>
+        </div>
+
+        <div class="destination">
+            <img src="mysore.jpg" alt="Mysore">
+            <h3>Mysore</h3>
+            <p>Explore the royal heritage of Mysore, famous for its palaces, gardens, and vibrant culture. Visit the majestic Mysore Palace, the serene Chamundi Hill, and the lively Devaraja Market. Mysore is also known for its delicious Mysore Pak and rich silk sarees.</p>
+        </div>
+
+        <div class="destination">
+            <img src="leh.jpg" alt="Leh Ladakh">
+            <h3>Leh Ladakh</h3>
+            <p>Experience the breathtaking landscapes of Leh Ladakh. Known for its stunning mountains, crystal-clear lakes, and rich Buddhist culture, this region offers a unique adventure. Visit the iconic Pangong Lake and Nubra Valley for an unforgettable journey into the Himalayas.</p>
+        </div>
+
+        <div class="destination">
+            <img src="darjeeling.jpg" alt="Darjeeling">
+            <h3>Darjeeling</h3>
+            <p>Famous for its tea plantations and panoramic views of the Himalayas, Darjeeling is a hill station that offers tranquility and natural beauty. Take a ride on the Darjeeling Himalayan Railway and enjoy the cool climate, vibrant gardens, and stunning sunrise views at Tiger Hill.</p>
+        </div>
+
+        <div class="destination">
+            <img src="varanasi.webp" alt="Varanasi">
+            <h3>Varanasi</h3>
+            <p>Immerse yourself in the spiritual ambiance of Varanasi, one of the oldest cities in the world. Witness the mesmerizing Ganga Aarti, explore ancient temples, and take a boat ride on the Ganges River. Varanasi offers a deep insight into India's rich cultural heritage.</p>
+        </div>
+
+        <div class="destination">
+            <img src="mumbai.jpg" alt="Mumbai">
+            <h3>Mumbai</h3>
+            <p>Experience the hustle and bustle of Mumbai, India's financial capital. From the iconic Gateway of India to the serene Marine Drive, this city offers a blend of tradition and modernity. Enjoy delicious street food, explore Bollywood, and visit cultural landmarks.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ayush Tours and Travels. All rights reserved.</p>
+    </footer>
+</body>
+</html>

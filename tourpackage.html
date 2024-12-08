@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages - Ayush Tours and Travels</title>
+    <link rel="icon" type="image/x-icon" href="ayushtravels.jpg">
+    <style>
+        body { font-family: 'Arial', sans-serif;
+        background-image: url('kedarnath.jpeg'); 
+        background-size: contain;
+        color: wheat;
+    }
+         header {
+            background-color: rgba(17, 3, 3, 0.2);
+            padding: 20px;
+            text-align: center;
+            font-size: xx-large;
+        }
+        h1 {
+            margin: 0;
+            color:wheat;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .package {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+            width: calc(30% - 30px);
+            position: relative;
+        }
+
+        .package:hover {
+            transform: scale(1.05);
+        }
+        .package img {
+            width: 100%;
+            height: auto;
+        }
+
+        .package h3 {
+            margin: 10px 0;
+            color: #ff6f61;
+            text-align: center;
+        }
+
+        .package p {
+            text-align: justify;
+        }
+
+        .package .price {
+            font-size: 1.5em;
+            color: greenyellow;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .highlights, .itinerary {
+            margin: 10px 0;
+            padding: 0 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .package {
+                width: calc(45% - 30px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .package {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+    /* Adjustments for small screens (phones) if needed */
+    body {
+        padding: 10px;
+    }
+    .login-container {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjustments for tablets if needed */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exciting Tour Packages</h1>
+    </header>
+    
+    <div class="container">
+        <div class="package">
+            <h3>Spiritual Varanasi</h3>
+            <img src="varanasi.webp" alt="">
+            <p>Immerse yourself in the spiritual essence of Varanasi, one of the oldest living cities in the world. Experience the Ganga Aarti, explore ancient temples, and witness the unique culture of this holy city.</p>
+            <div class="price">Price: ₹5,000</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Ganga Aarti at Dashashwamedh Ghat</li>
+                    <li>Visit to Kashi Vishwanath Temple</li>
+                    <li>Boat ride on the Ganges</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrival in Varanasi, evening Aarti</li>
+                    <li>Day 2: Temple visits and city exploration</li>
+                    <li>Day 3: Boat ride at sunrise, visit Sarnath</li>
+                    <li>Day 4: Departure</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="package">
+            <h3>Explore Ladakh</h3>
+            <img src="leh.jpg" alt="">
+            <p>Experience the stunning landscapes and unique culture of Ladakh. From high mountain passes to serene monasteries, this tour offers an unforgettable adventure.</p>
+            <div class="price">Price: ₹10,000</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Visit Pangong Lake</li>
+                    <li>Explore Leh Palace and local markets</li>
+                    <li>Trek to Nubra Valley</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrive in Leh and acclimatize</li>
+                    <li>Day 2: Visit Pangong Lake</li>
+                    <li>Day 3: Nubra Valley exploration</li>
+                    <li>Day 4: Visit local monasteries and markets</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="package">
+            <h3>Charming Rajasthan</h3>
+            <img src="bhtargao.jpeg" alt="">
+            <p>Explore the royal state of Rajasthan, known for its rich history, grand forts, and vibrant culture. Experience the beauty of cities like Jaipur, Udaipur, and Jaisalmer.</p>
+            <div class="price">Price: ₹9,000</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Visit Amber Fort in Jaipur</li>
+                    <li>Explore the City Palace in Udaipur</li>
+                    <li>Experience a camel ride in Jaisalmer</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrival in Jaipur, city tour</li>
+                    <li>Day 2: Explore Jaipur’s forts</li>
+                    <li>Day 3: Travel to Udaipur, boat ride on Lake Pichola</li>
+                    <li>Day 4: Visit Jaisalmer and the Thar Desert</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="package">
+            <h3>South Indian Odyssey</h3>
+            <img src="nagaland.jpg" alt="">
+            <p>Discover the rich culture and natural beauty of South India, from the backwaters of Kerala to the temples of Tamil Nadu.</p>
+            <div class="price">Price: ₹11,000</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Houseboat cruise in Alleppey</li>
+                    <li>Visit the Meenakshi Temple in Madurai</li>
+                    <li>Explore the coffee plantations in Coorg</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrive in Kochi, explore Fort Kochi</li>
+                    <li>Day 2: Houseboat in Alleppey</li>
+                    <li>Day 3: Travel to Madurai, temple visits</li>
+                    <li>Day 4: Explore Coorg, coffee plantation tour</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="package">
+            <h3>Enchanting Sikkim</h3>
+            <img src="sikkim.jpeg" alt="">
+            <p>Experience the serene beauty of Sikkim with its stunning landscapes, vibrant culture, and breathtaking views of the Himalayas.</p>
+            <div class="price">Price: ₹6,000</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Visit Gangtok and Tsomgo Lake</li>
+                    <li>Explore Pelling and its stunning views</li>
+                    <li>Visit local monasteries and enjoy local cuisine</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrive in Gangtok, local sightseeing</li>
+                    <li>Day 2: Visit Tsomgo Lake and Nathula Pass</li>
+                    <li>Day 3: Travel to Pelling, explore</li>
+                    <li>Day 4: Departure</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="package">
+            <h3>Spiritual Tamil Nadu</h3>
+            <img src="kerala.jpeg" alt="">
+            <p>Explore the temples and rich history of Tamil Nadu, experiencing its vibrant culture and traditional art forms.</p>
+            <div class="price">Price: ₹12,000</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Visit Meenakshi Temple in Madurai</li>
+                    <li>Explore the Brihadeeswarar Temple in Thanjavur</li>
+                    <li>Experience traditional dance performances</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrive in Chennai, travel to Madurai</li>
+                    <li>Day 2: Visit Meenakshi Temple</li>
+                    <li>Day 3: Explore Thanjavur and its temples</li>
+                    <li>Day 4: Departure</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="package">
+            <h3>Discover Nagaland</h3>
+            <img src="nagaland.jpg" alt="">
+            <p>Delve into the unique culture and traditions of Nagaland. Experience traditional festivals, local cuisine, and beautiful landscapes.</p>
+            <div class="price">Price: ₹5,500</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Visit Kohima and its historic sites</li>
+                    <li>Experience the Hornbill Festival (if in season)</li>
+                    <li>Explore local villages and crafts</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrive in Kohima, local sightseeing</li>
+                    <li>Day 2: Explore the Hornbill Festival</li>
+                    <li>Day 3: Visit local villages and markets</li>
+                    <li>Day 4: Departure</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="package">
+            <h3>Bengal Heritage Tour</h3>
+            <img src="bengal.jpeg" alt="">
+            <p>Explore the rich cultural heritage of West Bengal, visiting Kolkata, the Sundarbans, and Darjeeling.</p>
+            <div class="price">Price: ₹2,000</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Visit Victoria Memorial in Kolkata</li>
+                    <li>Explore the Sundarbans National Park</li>
+                    <li>Experience local cuisine and culture</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrive in Kolkata, city tour</li>
+                    <li>Day 2: Travel to Sundarbans, wildlife exploration</li>
+                    <li>Day 3: Head to Darjeeling, tea estate visit</li>
+                    <li>Day 4: Departure</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="package">
+            <h3>Ranchi Wildlife Adventure</h3>
+            <img src="balaji.jpeg" alt="">
+            <p>Experience the lush greenery and wildlife of Ranchi. Explore waterfalls, national parks, and enjoy nature treks.</p>
+            <div class="price">Price: ₹8,000</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Visit Jonha and Hundru Falls</li>
+                    <li>Explore the Betla National Park</li>
+                    <li>Experience local tribal culture</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrive in Ranchi, local sightseeing</li>
+                    <li>Day 2: Visit Jonha and Hundru Falls</li>
+                    <li>Day 3: Explore Betla National Park</li>
+                    <li>Day 4: Departure</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="package">
+            <h3>Delhi Historical Tour</h3>
+            <img src="banglore.jpg" alt="">
+            <p>Discover the historical and cultural richness of Delhi, from ancient forts to modern attractions.</p>
+            <div class="price">Price: ₹4,000</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Visit India Gate and Raj Ghat</li>
+                    <li>Explore Qutub Minar and Humayun's Tomb</li>
+                    <li>Experience street food in Chandni Chowk</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrive in Delhi, city tour</li>
+                    <li>Day 2: Visit historical sites</li>
+                    <li>Day 3: Explore markets and food</li>
+                    <li>Day 4: Departure</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="package">
+            <h3>Punjab Culture and Cuisine</h3>
+            <img src="mysore.jpg" alt="">
+            <p>Explore the vibrant culture and delicious cuisine of Punjab, visiting cities like Amritsar and Ludhiana.</p>
+            <div class="price">Price: ₹8,000</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Visit the Golden Temple in Amritsar</li>
+                    <li>Experience a traditional Punjabi meal</li>
+                    <li>Explore local markets and crafts</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrive in Amritsar, visit Golden Temple</li>
+                    <li>Day 2: Explore Jallianwala Bagh and local cuisine</li>
+                    <li>Day 3: Travel to Ludhiana, shopping and cultural exploration</li>
+                    <li>Day 4: Departure</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="package">
+            <h3>Rameshwaram Spiritual Journey</h3>
+            <img src="ramesh.webp" alt="">
+            <p>Visit the sacred town of Rameshwaram, known for its temples and stunning coastal views. Experience the spiritual heritage of this holy place.</p>
+            <div class="price">Price: ₹10,000</div>
+            <div class="highlights">
+                <strong>Highlights:</strong>
+                <ul>
+                    <li>Visit the Ramanathaswamy Temple</li>
+                    <li>Explore Dhanushkodi and its ruins</li>
+                    <li>Relax on the beautiful beaches</li>
+                </ul>
+            </div>
+            <div class="itinerary">
+                <strong>Itinerary:</strong>
+                <ol>
+                    <li>Day 1: Arrive in Rameshwaram, local sightseeing</li>
+                    <li>Day 2: Visit Ramanathaswamy Temple</li>
+                    <li>Day 3: Explore Dhanushkodi, beach relaxation</li>
+                    <li>Day 4: Departure</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ayush Tours and Travels. All rights reserved.</p>
+    </footer>
+</body>
+</html>

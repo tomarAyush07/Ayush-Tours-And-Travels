@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ayush Travel Tours</title>
+    <link rel="icon" type="image/x-icon" href="ayushtravels.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary-color: #1A237E; 
+            --accent-color:#FFD700;  
+            --background-color: #F5F5DC; 
+            --text-color: #333333; 
+        }
+
+        body, h1, h2, h3, p, a {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .login-container h1 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: var(--primary-color);
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        .show-password {
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: var(--accent-color);
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media only screen and (max-width: 600px) {
+    /* Adjustments for small screens (phones) if needed */
+    body {
+        padding: 10px;
+    }
+    .login-container {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjustments for tablets if needed */
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login to Your Account</h1>
+
+        <form id="loginForm" onsubmit="return validateLogin(event)">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <label class="show-password">
+                    <input type="checkbox" onclick="togglePassword()"> Show Password
+                </label>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div id="error-message" class="error-message" style="display: none;">
+            <p>Invalid credentials. <a href="register.html">Register here</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ayush Tours. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function validateLogin(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const storedEmail = localStorage.getItem('userEmail');
+            const storedPassword = localStorage.getItem('userPassword');
+            if (email === storedEmail && password === storedPassword) {
+                window.location.href = 'project2.html';  
+            } else {
+                document.getElementById('error-message').style.display = 'block';
+            }
+        }
+
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+    </script>
+</body>
+</html>
